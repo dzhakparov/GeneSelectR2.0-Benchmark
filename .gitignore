@@ -47,3 +47,38 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Analysis inputs and generated outputs
+/data/
+/cache/
+/package/
+/redesign/results/
+/redesign/results_*/
+/results_*/
+/independent_benchmark_runs/
+/locked_panels/
+/audit/
+/output/
+/tmp/
+*.csv
+*.tsv
+*.rds
+*.RDS
+*.rda
+*.RData
+*.xlsx
+*.json
+*.log
+*.html
+*.pdf
+*.docx
+*.pptx
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pkl
+*.pyc
+__pycache__/
+.Rhistory
+.Rproj.user/
