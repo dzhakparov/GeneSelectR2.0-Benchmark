@@ -28,6 +28,7 @@ scope.
 | `scripts/` | Repository-relative entry points that call the maintained runners under `redesign/` and `benchmarks/` |
 | `figures/README.md` | Rendered figure files, captions, source tables, and verification state |
 | `results_summary.md` | Numerical primary and component-ablation results with provenance |
+| `synthesized_report.md` | Integrated analysis inventory, short results, limitations, and reporting recommendations |
 | `provenance/README.md` | Package revision decision, script provenance, and reproducibility checklist |
 
 The established implementation remains under `redesign/` and `benchmarks/`.
