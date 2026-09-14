@@ -26,7 +26,8 @@ scope.
 | `methods/README.md` | Analysis methods, resampling, null references, evaluation, and biological assessment |
 | `configurations/registry.md` | Configuration and classification registry for reported, sensitivity, development, historical, and exploratory work |
 | `scripts/` | Repository-relative entry points that call the maintained runners under `redesign/` and `benchmarks/` |
-| `figures/README.md` | Figure inventory, captions, source tables, and verification state |
+| `figures/README.md` | Rendered figure files, captions, source tables, and verification state |
+| `results_summary.md` | Numerical primary and component-ablation results with provenance |
 | `provenance/README.md` | Package revision decision, script provenance, and reproducibility checklist |
 
 The established implementation remains under `redesign/` and `benchmarks/`.
@@ -40,9 +41,9 @@ Run commands from the repository root.
 1. `bash supplementary/scripts/check_inputs.sh`
 2. `bash supplementary/scripts/run_tests.sh`
 3. `bash supplementary/scripts/run_primary.sh`
-4. `bash supplementary/scripts/run_ablations.sh`
+4. `bash supplementary/scripts/run_method_development.sh`
 5. `bash supplementary/scripts/run_biology.sh`
-6. `bash supplementary/scripts/run_complementarity.sh`
+6. `bash supplementary/scripts/run_dge_complementarity.sh`
 7. `bash supplementary/scripts/run_figures.sh`
 
 The complete paper-scope sequence is:
@@ -103,15 +104,15 @@ Complementarity analyses write to
 `GENESELECTR_COMPLEMENTARITY_RESULTS_DIR` is set.
 
 Figure generation writes PDFs, PNGs, and source CSV files under the ignored
-complementarity result directory. A figure is suitable for paper use after its
-source tables, dataset labels, and rendering have been checked. The current
-archive worktree contains no result tables, so no rendered figure is committed
-in this branch.
+complementarity result directory. The six paper-scope rendered figures are
+committed under `figures/`. Their source tables remain external and are listed
+in `figures/README.md`.
 
 ## Reproducibility limits
 
-The repository contains scripts and documentation. Required expression data,
-annotation caches, fitted objects, and prior result tables are unavailable in
-this clean worktree. The documented workflow therefore provides a reproducible
-execution procedure after those inputs are restored. It does not establish
-reproduction of numerical paper results from this worktree alone.
+The repository contains scripts, rendered paper-scope figures, and a numerical
+results summary. Required expression data, annotation caches, fitted objects,
+and source result tables are unavailable in this clean worktree. The documented
+workflow therefore provides a reproducible execution procedure after those
+inputs are restored. It does not establish a fresh reproduction of numerical
+paper results from this worktree alone.
