@@ -44,6 +44,9 @@ repeat-level analysis.
 Targeted-assay analyses, p009 analyses, and unrelated multi-omics analyses
 are outside this report. The four follow-up datasets remain indexed in
 [`exploratory_not_in_paper/README.md`](exploratory_not_in_paper/README.md).
+The restored figure files preserve the earlier 11-dataset figure layout and
+therefore include these follow-up cohorts where applicable. Primary numerical
+conclusions remain restricted to the seven-dataset benchmark.
 
 ## Analysis design
 

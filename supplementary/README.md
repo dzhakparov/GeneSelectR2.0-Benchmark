@@ -12,9 +12,11 @@ datasets:
 | Validation | GSE101794, GSE107994, GSE13355, GSE65682, GSE69683, IMvigor210 (`imvigor210`) |
 | Exploratory follow-up | GSE16879, GSE91061, GSE92415, GSE206285 |
 
-The four exploratory datasets are indexed under `exploratory_not_in_paper/`
-in the configuration registry. Their result files are excluded from the paper
-supplement.
+The four follow-up datasets are indexed under `exploratory_not_in_paper/` in
+the configuration registry. Their predictive result tables remain outside the
+primary numerical summary. The restored figure outputs retain the earlier
+11-dataset comparative figure set, so these four datasets appear in the figure
+panels where the archived figure layout includes them.
 
 Targeted-assay, p009, and unrelated multi-omics analyses are outside this
 scope.
