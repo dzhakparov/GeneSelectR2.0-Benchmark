@@ -54,12 +54,18 @@ rsconnect/
 /package/
 /redesign/results/
 /redesign/results_*/
+/redesign/results_corrected/
+/redesign/results_frozen_external_exact_2026-08-31/
+/redesign/complementarity_analysis/results/
 /results_*/
+/results*/
 /independent_benchmark_runs/
 /locked_panels/
 /audit/
 /output/
 /tmp/
+**/results*/
+**/cache/
 *.csv
 *.tsv
 *.rds
@@ -82,3 +88,15 @@ rsconnect/
 __pycache__/
 .Rhistory
 .Rproj.user/
+
+# Supplementary outputs are generated from the maintained entry points.
+/supplementary/results/
+/supplementary/figures/generated/
+/supplementary/figures/source_data/
+/supplementary/figures/*.csv
+/supplementary/figures/*.rds
+
+# Rendered supplementary figures may be committed after source-data QA.
+!/supplementary/figures/*.pdf
+!/supplementary/figures/*.png
+!/supplementary/figures/*.svg
