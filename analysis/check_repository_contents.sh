@@ -2,7 +2,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
-allowed='(^|/)(LICENSE|README[.]md|[.]gitignore|[.]gitattributes)$|[.](R|py|sh|md|png|jpg|jpeg|svg)$'
+allowed='(^|/)(LICENSE|README[.]md|[.]gitignore|[.]gitattributes)$|[.](R|py|sh|md|png|jpg|jpeg|svg|pdf)$'
 unexpected=()
 
 while IFS= read -r path; do

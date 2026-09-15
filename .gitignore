@@ -1,6 +1,7 @@
 # History files
 .Rhistory
 .Rapp.history
+.DS_Store
 
 # Session Data files
 .RData
@@ -50,6 +51,9 @@ rsconnect/
 
 # Analysis inputs and generated outputs
 /data/
+**/data/
+**/data-raw/
+**/data_raw/
 /cache/
 /package/
 /redesign/results/
@@ -67,12 +71,15 @@ rsconnect/
 **/results*/
 **/cache/
 *.csv
+*.csv.gz
 *.tsv
+*.tsv.gz
 *.rds
 *.RDS
 *.rda
 *.RData
 *.xlsx
+*.xls
 *.json
 *.log
 *.html
@@ -81,9 +88,16 @@ rsconnect/
 *.pptx
 *.parquet
 *.feather
+*.fst
 *.h5
 *.hdf5
+*.loom
+*.mtx
+*.mtx.gz
+*.npy
+*.npz
 *.pkl
+*.qs
 *.pyc
 __pycache__/
 .Rhistory
