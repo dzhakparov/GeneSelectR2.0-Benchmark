@@ -6,15 +6,6 @@ source tables behind every manuscript table and figure, the scripts that
 produced them, and the supplementary analyses referred to in the text. The
 GeneSelectR 2.0 R package itself is provided in a separate repository.
 
-## Start here
-
-| If you want to… | Go to |
-|---|---|
-| Check a number, table or figure in the manuscript | [`manuscript/`](manuscript/README.md): source tables and figure scripts; regenerates Figures 1–4 in about a minute |
-| Read the supplementary methods and results | [`supplementary/`](supplementary/README.md): methods, numerical results, analysis report, supplementary figures |
-| See how Stabl was run | [`redesign/stabl_comparison/`](redesign/stabl_comparison/README.md) |
-| Re-run the full benchmark | [`supplementary/scripts/`](supplementary/scripts/): ordered entry points (see [Full re-analysis](#full-re-analysis)) |
-
 ## Manuscript to repository map
 
 | Manuscript item | Source tables (`manuscript/source_data/`) | Produced by |
