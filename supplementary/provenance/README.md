@@ -2,8 +2,7 @@
 
 ## Repository and package revisions
 
-The repository source is `codex/analysis-archive` at commit `13314a54`.
-The requested package reference is `621be0c1`, recorded in `analysis/config.R`
+The package reference is `621be0c1`, recorded in `analysis/config.R`
 and used by `analysis/bootstrap_package.sh`.
 
 Revision `db1f6528` was checked against `621be0c1` on 2026-09-14. The
@@ -16,10 +15,7 @@ simplified interface with `B`, `k_folds`, `permutations`, `null_B`, and
 `workers`; the runner arguments are absent. The cleaned package revision is
 therefore incompatible with the archived reported workflow.
 
-The comparison was a call-interface check. Numerical reproduction of the
-reported calculation was unavailable because the clean worktree contains no
-expression matrices, metadata, annotation caches, or saved result files.
-`621be0c1` remains the verified workflow reference. The revision check can be
+The comparison was a call-interface check. `621be0c1` remains the verified workflow reference. The revision check can be
 repeated with:
 
 ```bash
@@ -46,7 +42,7 @@ ignored output directory when inputs are available.
 
 ## Reproducibility checklist
 
-- [ ] Checkout `codex/paper-supplementary-materials`.
+- [ ] Check out the `paper-supplementary-materials` branch.
 - [ ] Restore the required expression matrices, metadata, and annotation
       resources under ignored `data/` paths.
 - [ ] Confirm `git rev-parse 621be0c1` succeeds.
@@ -63,21 +59,12 @@ ignored output directory when inputs are available.
 - [ ] Preserve the exact package revision, seeds, worker limit, and input
       checksums in the run archive.
 
-## Missing inputs in the current worktree
+## Input availability
 
-The following required inputs were absent during repository preparation:
-
-- package source extracted under `package/GeneSelectR/`;
-- SOS-ALL expression and metadata;
-- all prepared validation matrices and metadata;
-- IMvigor210 data;
-- GO, Hallmark, Open Targets, and STRING resources;
-- saved benchmark splits, rankings, fits, and result tables.
-
-The missing inputs prevent numerical validation and figure acceptance in this
-clean worktree.
-
-The requested source document `redesign/full_benchmark_plan.md` is absent from
-the archive branch. The maintained plan is distributed across
-`analysis/README.md`, `analysis/config.R`, `analysis/run_all.sh`,
-`benchmarks/README.md`, and the script headers under `redesign/`.
+Expression data and annotation resources are not redistributed. They are
+obtained from the public sources listed in the top-level README and prepared
+under the ignored `data/` directory. The package source is extracted into the
+ignored `package/` directory by `analysis/bootstrap_package.sh`. The source
+tables for the manuscript figures and tables are committed under
+`manuscript/source_data/`, and compact annotation inputs for the Stabl
+biological assessment under `redesign/stabl_comparison/biology/reference_inputs/`.

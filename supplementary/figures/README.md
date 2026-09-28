@@ -12,13 +12,17 @@ the repository commit.
 
 ## Figure inventory
 
+These are supplementary figures S1–S6. Their file names keep the numbering of
+the earlier analysis report and do not correspond to the manuscript figure
+numbers; the manuscript figures are in [`manuscript/figures/`](../../manuscript/figures/).
+
 | Figure | Files | Generation script | Caption |
 |---|---|---|---|
-| Figure 2: prediction and stability | `Figure_2_prediction_and_stability.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Mean test AUC and cross-split gene-set stability by method, dataset, and panel size |
-| Supplementary stability curves and heatmap | `Supplementary_stability_by_gene_set_size.pdf` / `.png`; `Supplementary_stability_heatmap_k20.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Stability measures across panel sizes and the archived dataset set |
-| Figure 3: DGE/GeneSelectR complementarity | `Figure_3_DGE_GeneSelectR_complementarity.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Rank percentiles, top-k overlap, and recurrent genes from matched candidate pools |
-| Supplementary DGE score components | `Supplementary_DGE_vs_GeneSelectR_components.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | DGE rank compared with GeneSelectR score components |
-| Figure 4: biological group assessment | `Figure_4_gene_group_biology.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | GO, Hallmark, Open Targets, and STRING group measurements compared with matched random sets |
+| S1: prediction and stability | `Figure_2_prediction_and_stability.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Mean test AUC and cross-split gene-set stability by method, dataset, and panel size |
+| S2–S3: stability curves and heatmap | `Supplementary_stability_by_gene_set_size.pdf` / `.png`; `Supplementary_stability_heatmap_k20.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Stability measures across panel sizes and the archived dataset set |
+| S4: DGE/GeneSelectR complementarity | `Figure_3_DGE_GeneSelectR_complementarity.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | Rank percentiles, top-k overlap, and recurrent genes from matched candidate pools |
+| S5: DGE score components | `Supplementary_DGE_vs_GeneSelectR_components.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | DGE rank compared with GeneSelectR score components |
+| S6: biological group assessment | `Figure_4_gene_group_biology.pdf` / `.png` | `redesign/complementarity_analysis/06_make_figures.R` | GO, Hallmark, Open Targets, and STRING group measurements compared with matched random sets |
 
 Biological measurements are plotted as separate axes. STRING is secondary when
 retained. The predictive ranking is calculated independently of these axes.

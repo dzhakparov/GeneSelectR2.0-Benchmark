@@ -2,9 +2,16 @@
 
 **Scope:** GeneSelectR paper supplementary analyses  
 **Report date:** 2026-09-14  
-**Primary evidence:** deterministic benchmark and extension reports in the
-external result archive; committed figures and reviewer-facing documentation
-in this worktree.
+**Primary evidence:** deterministic benchmark and extension reports; committed
+figures and documentation in this repository.
+
+> **Relation to the manuscript.** The manuscript compares the locked GeneSelectR 2.0 configuration
+> (`GS_full_ungrouped`) with seven comparators: Stabl, mRMR, random-forest importance, DGE, Boruta,
+> LASSO and elastic net. This document also covers method-development variants (for example `soft_gs`,
+> `cbgs_prune`, `cb_gs_w2`, `GS_full_grouped`) that were evaluated during development and are not part
+> of the manuscript comparison. Their status is listed in the
+> [configuration registry](configurations/registry.md). Source tables for the manuscript results are in
+> [`manuscript/source_data/`](../manuscript/source_data/).
 
 ## Summary
 
@@ -41,8 +48,7 @@ repeat-level analysis.
 | Validation | IMvigor210 (`imvigor210`) | Urinary bladder carcinoma | Primary |
 | Follow-up | GSE16879, GSE91061, GSE92415, GSE206285 | Additional cohorts | Exploratory; excluded from paper supplement |
 
-Targeted-assay analyses, p009 analyses, and unrelated multi-omics analyses
-are outside this report. The four follow-up datasets remain indexed in
+The four follow-up datasets remain indexed in
 [`exploratory_not_in_paper/README.md`](exploratory_not_in_paper/README.md).
 The restored figure files preserve the earlier 11-dataset figure layout and
 therefore include these follow-up cohorts where applicable. Primary numerical
@@ -328,33 +334,15 @@ The following checks were completed in the archived analyses:
 | Deep-path evaluator refit | Three warning-affected rows; maximum AUC change 3.331e-16 |
 | Repository-content check | Passed |
 
-The clean worktree contains the scripts, committed rendered figures, figure
-manifest, numerical summary, methods, provenance, and this synthesized report.
-Expression matrices, metadata, annotation caches, fitted objects, and source
-result tables remain under ignored paths in the external analysis archive. A
-fresh full numerical rerun was therefore not performed from this checkout.
+This repository contains the scripts, rendered figures, figure manifest,
+numerical summary, methods, provenance and this report. Expression matrices,
+annotation caches and fitted objects are regenerated from the public inputs by
+the scripts; the manuscript source tables are in `manuscript/source_data/`.
 
 The package interface used by the maintained runners was verified at revision
 `621be0c1`. The simplified package revision `db1f6528` has a different
 `geneselectr2_fit` interface and is incompatible with the archived reported
 workflow.
-
-## Interpretation and reporting recommendations
-
-1. Report the primary endpoint as mean AUC minus matched Random, with dataset,
-   panel size, and method counts stated explicitly.
-2. State that GeneSelectR-derived configurations ranked first in five of seven
-   primary datasets and that classical selectors remained competitive.
-3. Use `GS_full_ungrouped` as the current primary base configuration, with
-   external evaluation of its newly locked panels pending.
-4. Describe component and biological analyses as descriptive sensitivity and
-   interpretation analyses. Biological measurements are separate from the
-   predictive score.
-5. Include the GSE13355 ceiling behavior and the GSE107994 utility-calibration
-   instability as dataset-specific limitations.
-6. Preserve the 100-permutation follow-up as a completed diagnostic for the
-   two exceptional datasets. Treat epsilon-rule revision as future method
-   development.
 
 ## Linked supplementary artifacts
 

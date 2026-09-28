@@ -30,4 +30,3 @@ retained to document method development and are not the reported workflow.
 `compare_historical_primary.R` and `index_historical_results.R` inspect these
 older runs when their ignored output directories are present.
 
-Targeted-assay and p009 multi-omics analyses are excluded from this branch.

@@ -1,0 +1,41 @@
+method,source,datasets_above_reference
+GeneSelectR 2.0,GO-BP,6
+GeneSelectR 2.0,Hallmark,5
+GeneSelectR 2.0,STRING,7
+GeneSelectR 2.0,OT 0.05,5
+GeneSelectR 2.0,OT 0.10,4
+mRMR,GO-BP,7
+mRMR,Hallmark,2
+mRMR,STRING,5
+mRMR,OT 0.05,3
+mRMR,OT 0.10,2
+Random forest,GO-BP,6
+Random forest,Hallmark,7
+Random forest,STRING,7
+Random forest,OT 0.05,6
+Random forest,OT 0.10,5
+DGE,GO-BP,6
+DGE,Hallmark,7
+DGE,STRING,7
+DGE,OT 0.05,5
+DGE,OT 0.10,3
+Boruta,GO-BP,6
+Boruta,Hallmark,6
+Boruta,STRING,7
+Boruta,OT 0.05,6
+Boruta,OT 0.10,3
+Stabl,GO-BP,6
+Stabl,Hallmark,3
+Stabl,STRING,5
+Stabl,OT 0.05,3
+Stabl,OT 0.10,2
+LASSO,GO-BP,6
+LASSO,Hallmark,4
+LASSO,STRING,7
+LASSO,OT 0.05,5
+LASSO,OT 0.10,4
+Elastic net,GO-BP,7
+Elastic net,Hallmark,4
+Elastic net,STRING,7
+Elastic net,OT 0.05,3
+Elastic net,OT 0.10,3

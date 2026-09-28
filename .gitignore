@@ -114,3 +114,16 @@ __pycache__/
 !/supplementary/figures/*.pdf
 !/supplementary/figures/*.png
 !/supplementary/figures/*.svg
+
+# Committed for reviewers: manuscript source tables and figures
+!/manuscript/source_data/*.csv
+!/manuscript/figures/*.pdf
+!/manuscript/figures/*.png
+!/manuscript/figures/*.svg
+# Committed for reviewers: frozen inputs and outputs of the Stabl biological assessment
+!/redesign/stabl_comparison/biology/*.csv
+!/redesign/stabl_comparison/biology/reference_inputs/
+!/redesign/stabl_comparison/biology/reference_inputs/*
+
+# Manuscript drafts are kept out of the repository
+/redesign/stabl_comparison/*.tex

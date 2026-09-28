@@ -2,10 +2,17 @@
 
 ## Provenance and scope
 
-This summary records the reported numerical results for the seven manuscript
-datasets. It was transcribed from the verified deterministic benchmark report
-and the verified older-seven extension report in the external result archive.
-The source CSV files and fitted objects remain outside the repository.
+This summary records numerical results for the seven manuscript datasets,
+transcribed from the verified deterministic benchmark and extension reports.
+
+> **Relation to the manuscript.** The manuscript compares the locked GeneSelectR 2.0 configuration
+> (`GS_full_ungrouped`) with seven comparators: Stabl, mRMR, random-forest importance, DGE, Boruta,
+> LASSO and elastic net. This document also covers method-development variants (for example `soft_gs`,
+> `cbgs_prune`, `cb_gs_w2`, `GS_full_grouped`) that were evaluated during development and are not part
+> of the manuscript comparison. Their status is listed in the
+> [configuration registry](configurations/registry.md). Source tables for the manuscript results are in
+> [`manuscript/source_data/`](../manuscript/source_data/).
+
 
 The primary benchmark contains seven datasets, 27 unique methods, 15 outer
 splits, six panel sizes, and 2,520 evaluation rows per dataset. Independent
