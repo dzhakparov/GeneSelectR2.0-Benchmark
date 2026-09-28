@@ -4,7 +4,8 @@ This repository accompanies the manuscript **"GeneSelectR 2.0: An R Workflow
 for Predictive Gene Selection and Biological Interpretation"**. It contains the
 source tables behind every manuscript table and figure, the scripts that
 produced them, and the supplementary analyses referred to in the text. The
-GeneSelectR 2.0 R package itself is provided in a separate repository.
+GeneSelectR 2.0 R package itself is provided in a
+[separate repository](https://anonymous.4open.science/r/GeneSelectR2_Anonymized).
 
 ## Manuscript to repository map
 
